@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!--include the following meta tag to make chrome dev tools recognize media queries: -->
+    <meta name="viewport" content="width=device-width">
     <title>Tyler Dolliver</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="favicon.ico">
@@ -11,9 +13,29 @@
   </head>
   <body>
     <header>
-      <a class="header-link" target="_blank" href="https://www.linkedin.com/in/tyler-dolliver-b9aa306b">LinkedIn</a>
-      <a class="header-link" target="_blank" href="https://github.com/tdolliver">Github</a>
-      <a class="header-link" target="_blank" href="Tyler_Dolliver_Resume.PDF" download>Resume</a>
+      <div class="header-desktop">
+        <div class="dropdown">
+          <button class="dropbtn header-link">Portfolio ▼</button>
+          <div class="dropdown-content">
+            <a class="portfolio-option" href="#">FM-profile-card</a>
+            <a class="portfolio-option" href="#">FM-social-proof-section</a>
+          </div>
+        </div>
+        <a class="header-link" target="_blank" href="https://www.linkedin.com/in/tyler-dolliver-b9aa306b">LinkedIn</a>
+        <a class="header-link" target="_blank" href="https://github.com/tdolliver">Github</a>
+        <a class="header-link" target="_blank" href="Tyler_Dolliver_Resume.PDF" download>Resume</a>
+      </div>
+      <div class="header-mobile">
+        <div class="dropdown">
+          <button class="dropbtn header-link">☰</button>
+          <div class="dropdown-content">
+            <a class="portfolio-option" target="_blank" href="https://www.linkedin.com/in/tyler-dolliver-b9aa306b">LinkedIn</a>
+            <a class="portfolio-option" target="_blank" href="https://github.com/tdolliver">Github</a>
+            <a class="portfolio-option" target="_blank" href="Tyler_Dolliver_Resume.PDF" download>Resume</a>
+            <a class="portfolio-option" target="_blank" href="#" download>Portfolio</a>
+          </div>
+        </div>
+      </div>
     </header>
     <div class="top">
       <h1>I'm Tyler.</h1>
@@ -22,23 +44,23 @@
     </div>
     <div class="middle-container">
       <div class="profile">
-        <h2>Hello.</h2>
+        <h2>hello.</h2>
         <p>I am a seasoned Linux System Administrator looking to branch out into a developer role.</p>
       </div>
       <hr>
       <div class="skills">
-        <h2>What I'm working on.</h2>
-        <div class="skill-row">
+        <h2>what i'm working on.</h2>
+        <div class="skill-row left">
           <img class="skill-linux" src="images/computer-monitor.png" alt="pc-monitor-img">
           <h3>Linux Administration</h3>
           <p>I've been using Linux professionally for over 7 years now. My go-to desktop distro is Fedora</p>
         </div>
-        <div class="skill-row">
+        <div class="skill-row right">
           <img class="skill-python" src="images/python.png" alt="python-img">
           <h3>Python</h3>
           <p>I've recently begun developing in python.</p>
         </div>
-        <div class="skill-row">
+        <div class="skill-row left">
           <img class="skill-html" src="images/browser.png" alt="html/css-img">
           <h3>HTML/CSS</h3>
           <p>I've only scratched the surface of the front-end devlopers stack, however I'm excited to learn more!</p>

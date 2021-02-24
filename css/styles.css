@@ -12,6 +12,16 @@ header {
   color: #EAF6F6;
 }
 
+.header-desktop,
+.header-mobile {
+  background-color: #66BFBF;
+  padding: 0;
+}
+
+.header-mobile {
+  display: none;
+}
+
 h1 {
   margin: 50px auto 0 auto;
   font-family: 'Sacramento', cursive;
@@ -23,7 +33,7 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3.125rem;
   color: #66BFBF;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .programmer {
@@ -35,7 +45,7 @@ h3 {
   color: #11999E;
 }
 
-a {
+a, .dropbtn {
   color: #11999E;
   font-family: 'Montserrat', sans-serif;
   margin: 10px 20px;
@@ -68,10 +78,17 @@ hr {
 
 
 .skill-row {
-  width: 50%;
-  margin: 150px auto;
-  text-align: left;
+  width: 60%;
+  margin: 180px auto;
   line-height: 2;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
 }
 
 .skill-linux {
@@ -161,4 +178,69 @@ hr {
 
 .credit a {
   margin: 0;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  background-color: #66BFBF;
+}
+
+.dropbtn {
+  background-color: #66BFBF;
+  border-style: none;
+  font-size: 1rem;
+}
+
+.dropdown-content {
+  display: none;
+  margin-left: -30%;
+  position: absolute;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  min-width: 200px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #66BFBF;
+  padding: 12px 5px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  color: #EAF6F6;
+}
+
+.portfolio-option {
+  margin: 0;
+}
+
+@media screen and (max-width: 501px)
+{
+  .header-desktop {
+    display: none;
+  }
+  .header-mobile {
+    display: block;
+  }
+
+  .header-mobile .dropbtn {
+    font-size: 1.5rem;
+    margin: 5px 10px;
+  }
+
+  .header-mobile .dropdown-content {
+    right: 20%;
+    min-width: 80px;
+  }
+  .skill-row {
+    width: 90%;
+  }
 }
