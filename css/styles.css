@@ -79,7 +79,7 @@ hr {
 
 .skill-row {
   width: 60%;
-  margin: 180px auto;
+  margin: 200px auto;
   line-height: 2;
 }
 
@@ -127,7 +127,7 @@ hr {
    border-radius: 20px;
    color: #FFFFFF;
    font-family: Arial;
-   font-size: 40px;
+   font-size: 30px;
    font-weight: 100;
    padding: 20px;
    background-color: #66BFBF;
@@ -156,7 +156,7 @@ hr {
 
 .bottom-container {
   background-color: #66BFBF;
-  padding: 50px 0 20px;
+  padding: 30px 0 15px;
   color: #EAF6F6;
 }
 
@@ -165,9 +165,17 @@ hr {
   color: #11999E;
 }
 
+.header-link,
+.dropbtn {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #222831;
+}
+
 .copyright {
   color: #EAF6F6;
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: .75em;
 }
 
@@ -189,7 +197,6 @@ hr {
 
 .dropbtn {
   background-color: #66BFBF;
-  border-style: none;
   font-size: 1rem;
 }
 
@@ -225,6 +232,10 @@ hr {
   margin: 0;
 }
 
+.phone-mockup {
+  width: 10%;
+}
+
 @media screen and (max-width: 501px)
 {
   .header-desktop {
@@ -246,5 +257,13 @@ hr {
   }
   .skill-row {
     width: 90%;
+    margin: 50px auto;
+  }
+  hr {
+    margin-top: 25px;
+  }
+
+  .phone-mockup {
+    width: 30%;
   }
 }
