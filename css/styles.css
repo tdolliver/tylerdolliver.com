@@ -40,16 +40,22 @@ h3 {
   color: #11999E;
 }
 
-p {
+p,
+li {
   font-size: 1.2rem;
   color: #eeeeee;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 hr {
   border-style: dotted none none none;
   color: grey;
   border-width: thick;
-  width: 3%;
+  width: 5%;
   margin-top: 100px;
 }
 
@@ -79,6 +85,16 @@ hr {
   margin-bottom: 1%;
 }
 
+.profile {
+  max-width: 40%;
+  margin: 0 auto;
+  line-height: 1.5
+}
+
+.profile a {
+  margin: 0;
+}
+
 a, .dropbtn {
   color: #11999E;
   font-family: 'Montserrat', sans-serif;
@@ -94,7 +110,7 @@ a:hover {
 .skill-row {
   width: 60%;
   margin: 200px auto;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .right {
@@ -271,6 +287,10 @@ a:hover {
   .header-mobile .dropdown-content {
     right: 20%;
     min-width: 80px;
+  }
+
+  .profile {
+    max-width: 90%;
   }
 
   .skill-row {
