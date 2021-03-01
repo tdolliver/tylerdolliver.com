@@ -1,4 +1,13 @@
-/* https://colorhunt.co/palette/14832 */
+/* =================================
+  Base Element Styles
+==================================== */
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: #eeeeee;
+}
+
 div {
   background-color: #222831;
   position: relative;
@@ -10,16 +19,6 @@ header {
   background-color: #66BFBF;
   padding: 10px 10px 10px;
   color: #EAF6F6;
-}
-
-.header-desktop,
-.header-mobile {
-  background-color: #66BFBF;
-  padding: 0;
-}
-
-.header-mobile {
-  display: none;
 }
 
 h1 {
@@ -36,13 +35,48 @@ h2 {
   padding-bottom: 5px;
 }
 
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #eeeeee;
+}
+
+hr {
+  border-style: dotted none none none;
+  color: grey;
+  border-width: thick;
+  width: 3%;
+  margin-top: 100px;
+}
+
+.header-desktop,
+.header-mobile {
+  background-color: #66BFBF;
+  padding: 0;
+}
+
+.header-mobile {
+  display: none;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
 .programmer {
   font-weight: normal;
 }
 
-h3 {
-  font-family: 'Montserrat', sans-serif;
-  color: #11999E;
+.profile-pic {
+  width: 300px;
+  filter: grayscale(100%);
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 1%;
 }
 
 a, .dropbtn {
@@ -56,27 +90,7 @@ a:hover {
   color: #EAF6F6
 }
 
-p {
-  font-size: 1.2rem;
-  color: #eeeeee;
-}
-
-body {
-  margin: 0;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  color: #eeeeee;
-}
-
-hr {
-  border-style: dotted none none none;
-  color: grey;
-  border-width: thick;
-  width: 3%;
-  margin-top: 100px;
-}
-
-
+/* ---- Skill section formatting ---- */
 .skill-row {
   width: 60%;
   margin: 200px auto;
@@ -91,68 +105,60 @@ hr {
   text-align: left;
 }
 
-.skill-linux {
+.img-left {
   width: 18%;
+  max-width: 280px;
   float: left;
   padding-right: 30px;
 }
 
-.skill-python {
+.img-right {
   width: 18%;
+  max-width: 280px;
   float: right;
   padding-left: 30px;
 }
 
-.skill-html {
-  width: 18%;
-  float: left;
-  padding-right: 30px;
+.skills :last-child {
+  margin-bottom: 0;
 }
+/* -------- */
 
-.pro {
-  text-decoration: underline;
-}
-
-.profile-pic {
-  width: 300px;
-  filter: grayscale(100%);
-  border-radius: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 1%;
-}
-
+/* ---- Contact Me button styling ---- */
 .btn {
-   -webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
-   color: #FFFFFF;
-   font-family: Arial;
-   font-size: 30px;
-   font-weight: 100;
-   padding: 20px;
-   background-color: #66BFBF;
-   border: solid #11999E 1px;
-   text-decoration: none;
-   display: inline-block;
-   cursor: pointer;
-   text-align: center;
-   margin-top: 15px;
-   margin-bottom: 15px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: 100;
+  padding: 20px;
+  background-color: #66BFBF;
+  border: solid #11999E 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .btn:hover {
-   border: solid #337FED 1px;
-   background: #11999E;
-   background-image: -webkit-linear-gradient(top, #11999E, #3D94F6);
-   background-image: -moz-linear-gradient(top, #11999E, #3D94F6);
-   background-image: -ms-linear-gradient(top, #11999E, #3D94F6);
-   background-image: -o-linear-gradient(top, #11999E, #3D94F6);
-   background-image: -webkit-gradient(to bottom, #11999E, #3D94F6);
-   -webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
-   text-decoration: none;
+  border: solid #337FED 1px;
+  background: #11999E;
+  background-image: -webkit-linear-gradient(top, #11999E, #3D94F6);
+  background-image: -moz-linear-gradient(top, #11999E, #3D94F6);
+  background-image: -ms-linear-gradient(top, #11999E, #3D94F6);
+  background-image: -o-linear-gradient(top, #11999E, #3D94F6);
+  background-image: -webkit-gradient(to bottom, #11999E, #3D94F6);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
 }
+/* -------- */
+
 
 .bottom-container {
   background-color: #66BFBF;
@@ -188,6 +194,7 @@ hr {
   margin: 0;
 }
 
+/* ---- Mobile nav styling ---- */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -204,7 +211,7 @@ hr {
   display: none;
   margin-left: -30%;
   position: absolute;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   min-width: 205px;
   z-index: 1;
 }
@@ -219,11 +226,14 @@ hr {
   margin: 3px 0;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 .dropdown:hover .dropbtn {
   color: #EAF6F6;
 }
@@ -231,16 +241,23 @@ hr {
 .portfolio-option {
   margin: 0;
 }
+/* -------- */
+
 
 .phone-mockup {
   width: 10%;
 }
 
-@media screen and (max-width: 501px)
-{
+
+
+/* =================================
+  Media Queries
+==================================== */
+@media screen and (max-width: 501px) {
   .header-desktop {
     display: none;
   }
+
   .header-mobile {
     display: block;
   }
@@ -255,15 +272,17 @@ hr {
     right: 20%;
     min-width: 80px;
   }
+
   .skill-row {
     width: 90%;
     margin: 50px auto;
   }
-  hr {
-    margin-top: 25px;
-  }
 
   .phone-mockup {
     width: 30%;
+  }
+
+  hr {
+    margin-top: 25px;
   }
 }
